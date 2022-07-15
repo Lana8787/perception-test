@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Тип сприйняття</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/testquestions.js" defer></script>
+    <script src="/index.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Start section -->
+      <div id="start">Start Test</div>
+
+      <!-- Guide section -->
+      <div id="guide">
+        <h2>Test Guide</h2>
+        <p>
+          Людина сприймає інформацію через основні п'ять каналів: зоровий,
+          слуховий, тактильний, смаковий, нюховий. Та після сприйняття
+          інформація переробляється у нашій голові, причому цікаво те, що
+          переробляється вона на основі однієї переважаючої системи. Виділяють
+          основні чотири типи сенсорних систем:
+        </p>
+        <ul>
+          <li>
+            Візуальна. Коли домінуючим є зорова система обробки інформації:
+            форми, розташування, кольори.
+          </li>
+          <li>
+            Слухова. Домінуючою є слухова система обробки інформації: звуки,
+            мелодії, їх тон, гучність, тембр, чистота
+          </li>
+          <li>
+            Кінестетична. Домінуючою є чуттєва інформація: дотик, смак, запах,
+            відчуття текстур, температури
+          </li>
+          <li>
+            Дигітальний. Пов'язана з логічною побудовою внутрішнього діалогу.
+          </li>
+        </ul>
+
+        <div id="button">
+          <button id="exit">Exit</button>
+          <button id="continue">Continue</button>
+        </div>
+      </div>
+
+      <!-- Test section -->
+      <div id="test">
+        <div id="test_header">
+          <h5>Test App</h5>
+        </div>
+
+        <!-- Test questions -->
+        <div id="question">
+          <h2 id="questionNo"></h2>
+          <h2 id="questionText"></h2>
+        </div>
+
+        <!-- Test choices-->
+        <div id="optionList">
+          <h4 class="choice_que" id="option1"></h4>
+          <h4 class="choice_que" id="option2"></h4>
+          <h4 class="choice_que" id="option3"></h4>
+          <h4 class="choice_que" id="option4"></h4>
+        </div>
+
+        <!-- Answers section-->
+        <div id="answersSection">
+          <h3 id="total_correct">6 Of 6 Questions</h3>
+          <h3 id="next_question">Next</h3>
+        </div>
+      </div>
+
+      <!--Result section-->
+      <div id="result">
+        <h6>You Are Completed The Test</h6>
+        <div id="message_result"></div>
+        <button id="startAgain">Start Again</button>
+      </div>
+    </div>
+  </body>
+</html>
